@@ -1,3 +1,7 @@
+provider "aws" {
+  region     = "eu-central-1"
+}
+
 resource "aws_iam_policy" "allow_user_to_manage_their_mfa" {
   name        = "allow-user-to-manage-their-mfa"
   path        = "/"
